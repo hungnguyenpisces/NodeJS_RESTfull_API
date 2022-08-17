@@ -1,0 +1,32 @@
+{
+  "extends": ["airbnb-base", "plugin:prettier/recommended"],
+  "plugins": ["prettier"],
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off",
+    "no-param-reassign": "off",
+    "no-useless-escape": "off",
+    "import/no-extraneous-dependencies": [
+      "off",
+      {
+        "devDependencies": false,
+        "optionalDependencies": false,
+        "peerDependencies": false
+      }
+    ],
+    "consistent-return": "off",
+    "default-case": "off",
+    "newline-before-return": "error",
+    "space-before-blocks": "error"
+  }
+}

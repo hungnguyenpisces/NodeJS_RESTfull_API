@@ -1,0 +1,28 @@
+{
+  "all": true,
+  "extension": [".js"],
+  "check-coverage": true,
+  "extends": "@istanbuljs/nyc-config-babel",
+  "reporter": ["html", "lcov", "text", "text-summary"],
+  "report-dir": "./coverage",
+  "include": [
+    "src/controllers/*.js",
+    "src/middlewares/**/*.js",
+    "src/models/**/*.js"
+  ],
+  "exclude": [
+    "src/middlewares/error/handleError.js",
+    "src/middlewares/error/sendError.js",
+    "src/models/role.model.js"
+  ],
+  "statements": 95,
+  "branches": 95,
+  "functions": 95,
+  "lines": 95,
+  "watermarks": {
+    "lines": [70, 95],
+    "functions": [70, 95],
+    "branches": [70, 95],
+    "statements": [70, 95]
+  }
+}
